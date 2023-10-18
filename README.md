@@ -55,7 +55,6 @@
             width: 0;
             height: 3px;
             background-color: violet;
-
             transition-duration: 200ms;
         }
         #anim2:hover::before,
@@ -118,4 +117,5 @@
     </style>
 
 </body>
+
 </html>
