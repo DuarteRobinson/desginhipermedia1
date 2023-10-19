@@ -9,6 +9,7 @@
 
 <body>
     <header>
+        <pre> </pre>
         <div class="title1">BUTTONS</div>
         <p></p>
         <div class="subtitle1"> Default </div>
@@ -47,14 +48,38 @@
         <p></p>
         <div class="subtitle3"> Default Card Background</div>
         <div class="subtitle4"> Hovered Card Background</div>
-        <div class="card">
+
+        <div class="cards">
+            <div class="card">
+            </div>
+            <div class="card1">
+            </div>
         </div>
-        <div class="card1">
-        </div>
+        <pre> </pre>
+        <div class="title4">COLORS</div>
+        <p class="botoes"><button class="botao3" id="anim3">#242E4C</button>
+            <button class="botao4" id="anim4">#738BFD</button>
+        </p>
+        <p class="botoes"><button class="botao5" id="anim5">#F55623</button>
+            <button class="botao6" id="anim6">#767E96</button>
+        <p class="botoes"><button class="botao7" id="anim7">#E9EAED</button>
+            <button class="botao8" id="anim8">#F3F4F6</button>
+        </p>
     </header>
     <style>
+        .cards {
+            display: flex;
+            gap: 50px;
+            margin-left: 50px;
+            margin-bottom: 25px;
+        }
+
         header {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            margin: -10px;
         }
 
         h4 {
@@ -63,6 +88,7 @@
             position: relative;
             left: 380px;
         }
+
         .botao1 {
             background-color: #1A2950;
             color: white;
@@ -72,6 +98,7 @@
             border: #1A2950;
             position: relative;
             bottom: 25px;
+            left: 50px;
         }
 
         .botao2 {
@@ -83,6 +110,77 @@
             border: #767E96;
             position: relative;
             bottom: 30px;
+            left: 50px;
+        }
+
+        .botao3 {
+            background-color: #242e4c;
+            color: white;
+            height: 100px;
+            width: 100px;
+            box-shadow: 10px 10px 45px -14px rgba(0, 0, 0, 0.75);
+            border-left: #242e4c;
+            border-top:#242e4c;
+            border-color: #242e4c;
+        }
+
+        .botao4 {
+            background-color: #738BFD;
+            color: white;
+            height: 100px;
+            width: 100px;
+            box-shadow: 10px 10px 45px -14px rgba(0, 0, 0, 0.75);
+            border-color: #738BFD;
+        }
+
+        .botao5 {
+            background-color: #F55623;
+            color: white;
+            height: 100px;
+            width: 100px;
+            box-shadow: 10px 10px 45px -14px rgba(0, 0, 0, 0.75);
+            border-left: #F55623;
+            border-top:#F55623;
+            border-color: #F55623;
+        }
+
+        .botao6 {
+            background-color: #767E96;
+            color: white;
+            height: 100px;
+            width: 100px;
+            box-shadow: 10px 10px 45px -14px rgba(0, 0, 0, 0.75);
+            border-left: #767E96;
+            border-top:#767E96;
+            border-color: #767E96;
+        }
+
+        .botao7 {
+            background-color: #E9EAED;
+            color: black;
+            height: 100px;
+            width: 100px;
+            box-shadow: 10px 10px 45px -14px rgba(0, 0, 0, 0.75);
+            border-left: #E9EAED;
+            border-top:#E9EAED;
+            border-color: #E9EAED;
+        }
+
+        .botao8 {
+            background-color: #F3F4F6;
+            color: black;
+            height: 100px;
+            width: 100px;
+            box-shadow: 10px 10px 45px -14px rgba(0, 0, 0, 0.75);
+            border-left: #F3F4F6;
+            border-top:#F3F4F6;
+            border-color: #F3F4F6;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 30px;
+            margin-left: 50px;
         }
 
         #anim1 {
@@ -103,6 +201,60 @@
             color: white;
         }
 
+        #anim3 {
+            transition-duration: 200ms;
+        }
+
+        #anim3:hover {
+            background-color: #384774;
+            color: white;
+        }
+
+        #anim4 {
+            transition-duration: 200ms;
+        }
+
+        #anim4:hover {
+            background-color: #6478db;
+            color: white;
+        }
+
+        #anim5 {
+            transition-duration: 200ms;
+        }
+
+        #anim5:hover {
+            background-color: #cf4b1f;
+            color: white;
+        }
+
+        #anim6 {
+            transition-duration: 200ms;
+        }
+
+        #anim6:hover {
+            background-color: #63697e;
+            color: white;
+        }
+
+        #anim7 {
+            transition-duration: 200ms;
+        }
+
+        #anim7:hover {
+            background-color: #bfc0c2;
+            color: white;
+        }
+
+        #anim8 {
+            transition-duration: 200ms;
+        }
+
+        #anim8:hover {
+            background-color: #b3b3b3;
+            color: white;
+        }
+
         .container {
             display: flex;
             gap: 20px;
@@ -110,80 +262,113 @@
 
         label {
             color: #1e1a50;
+            position: relative;
+            left: 50px;
+        }
 
+        input {
+            position: relative;
+            left: 50px;
         }
 
         .card {
             width: 300px;
             height: 200px;
             box-shadow: 10px 10px 45px -14px rgba(0, 0, 0, 0.75);
-            position: relative;
-            left: 330px;
         }
 
         .card1 {
             width: 300px;
             height: 200px;
             box-shadow: 10px 10px 45px -14px rgba(0, 0, 0, 0.75);
-            position: relative; 
-            bottom: 200px;
-            left: 10px;
         }
-        .subtitle1{
+
+        .subtitle1 {
             color: #767E96;
             position: relative;
-            left: 100px;
+            left: 150px;
             font-style: italic;
             font-size: small;
         }
-        .subtitle2{
+
+        .subtitle2 {
             color: #767e96;
             position: relative;
-            left: 370px;
+            left: 430px;
             font-style: italic;
             font-size: small;
             bottom: 15px;
         }
-        .subtitle3{
-            color: #767E96;
-            position: relative;
-            left: 410px;
-            font-size: small;
-            font-style: italic;
-        }
-        .subtitle4{
-            color: #767E96;
-            position: relative;
-            left: 80px;
-            bottom: 15px;
-            font-size: small;
-            font-style: italic;
-        }
-        .title1{
-            position: relative;
-            left: 10px;
-            width: 80px;
-            background-color: #dde5fc;
-            border-bottom-right-radius: 10px;
-            border-top-right-radius:  10px;
-        }
-        .title2{
-            position: relative;
-            left: 10px;
-            width: 80px;
-            background-color: #dde5fc;
-            border-bottom-right-radius: 10px;
-            border-top-right-radius:  10px;
-        }
-        .title3{
-            position: relative;
-            left: 10px;
-            width: 100px;
-            background-color: #dde5fc;
-            border-bottom-right-radius: 10px;
-            border-top-right-radius:  10px;
-        }
-    </style>
-</body>
 
-</html>
+        .subtitle3 {
+            color: #767E96;
+            position: relative;
+            left: 480px;
+            font-size: small;
+            font-style: italic;
+        }
+
+        .subtitle4 {
+            color: #767E96;
+            position: relative;
+            left: 120px;
+            bottom: 15px;
+            font-size: small;
+            font-style: italic;
+        }
+
+        .title1 {
+            position: relative;
+            left: 10px;
+            width: 120px;
+            background-color: #dde5fc;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            text-align: center;
+        }
+
+        .title2 {
+            position: relative;
+            left: 10px;
+            width: 120px;
+            background-color: #dde5fc;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            text-align: center;
+        }
+
+        .title3 {
+            position: relative;
+            left: 10px;
+            width: 120px;
+            background-color: #dde5fc;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            text-align: center;
+        }
+
+        .title4 {
+            position: relative;
+            left: 10px;
+            width: 120px;
+            background-color: #dde5fc;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            text-align: center;
+        }
+
+        .bot {
+            display: flex;
+            gap: 40px;
+            margin-left: 80px;
+        }
+
+        .bot1 {
+            background-color: #242e4c;
+            color: white;
+            width: 120px;
+            height: 100px;
+            text-
+        }
+
+        </body></html>
