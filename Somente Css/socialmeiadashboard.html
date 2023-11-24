@@ -129,7 +129,7 @@
             overflow: hidden;
             box-shadow: var(--shadow-3);
         }
-        .car-big{
+        .card-big{
             height: 100px;
             position: relative;
         }
@@ -141,22 +141,22 @@
             top: 0;
             left: 0;
         }
-        .big1::before
+        .big1::before,
         .big2::before{
-            background-color: var(--blue.8);
+            background-color: var(--blue-8);
         }
         .big4::before{
             background-color: red;
         }
         .big3::before{
-            background-color: var(--gradient-10);
+            background-image: var(--gradient-10);
         }
         .card-big > div {
             font-size: var(--font-size-00);
         }
-        .card-big > div::nth-child(2) {
-            font-size: var(--font-size-5);
-            font-weight: 700;
+        .card-big > div:nth-child(2) {
+            font-size: var(--font-size-3);
+            font-weight: 600;
         }
     </style>
 </body>

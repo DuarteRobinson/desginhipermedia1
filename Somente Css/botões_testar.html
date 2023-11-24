@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="container">A</div>
+    <div class="container" id="slide-fwd-center">A</div>
     <style>
-        .container{
+        .container {
             background-color: blue;
             width: 100px;
             height: 50px;
@@ -16,6 +18,12 @@
             justify-content: center;
             align-items: center;
         }
+
+        .slide-fwd-center {
+            -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
     </style>
 </body>
+
 </html>
